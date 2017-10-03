@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.multithreading.MainActivity">
+
+    <Button
+        android:id="@+id/btnUsingRunnable"
+        android:text="Using Runnable Interface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="createThread"/>
+
+    <Button
+        android:id="@+id/btnUsingThread"
+        android:text="Using Thread Class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="createThread"/>
+
+    <Button
+        android:id="@+id/btnUsingAsyncTask"
+        android:text="Using AsyncTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="createThread"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:text="0"
+        android:textSize="30dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
